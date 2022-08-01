@@ -2,7 +2,7 @@ body {
   background: #3d516b;
 }
 
-form {
+div.container {
   width: 320px;
   padding: 60px 25px 80px;
   margin: 50px auto;

@@ -1,12 +1,12 @@
-module.exports = withTM({
-  reactStrictMode: true,
+module.exports = {
+  serverRuntimeConfig: {
+    PROJECT_ROOT: __dirname,
+  },
   webpack: (config) => {
-    // 아래를 추가합니다.
     config.module.rules.push({
-      test: /\.svg$/i,
-      issuer: /\.[jt]sx?$/,
+      test: /\.svg$/,
       use: ["@svgr/webpack"],
     });
     return config;
   },
-});
+};
